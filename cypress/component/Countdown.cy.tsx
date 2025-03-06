@@ -10,7 +10,7 @@ describe('<Countdown />', () => {
 
   it('should render with a different number of guesses', () => {
     cy.mount(<Countdown guesses={5}/>)
-    cy.get('[data-cy="countdown"]').should('exist').and('have.text', 'Guesses Remaining: -42')
+    cy.get('[data-cy="countdown"]').should('exist').and('have.text', 'Guesses Remaining: 5')
   })
 
   it('should render a correct guess message', () => {
